@@ -15,31 +15,37 @@ let routes = [
 		redirect: '/dashboard',
 	},
 	{
-		path: '/dashboard',
+		path: '/kirish',
 		name: 'Dashboard',
 		layout: "dashboard",
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "dashboard" */ '../views/Dashboard.vue'),
+		component: () => import(/* webpackChunkName: "dashboard" */ '../views/Kirish.vue'),
 	},
 	{
-		path: '/layout',
-		name: 'Layout',
+		path: '/kirish',
+		name: 'kirish',
 		layout: "dashboard",
 		component: () => import('../views/Layout.vue'),
 	},
 	{
-		path: '/tables',
-		name: 'Tables',
+		path: '/author',
+		name: 'author',
 		layout: "dashboard",
 		component: () => import('../views/Tables.vue'),
 	},
 	{
-		path: '/billing',
-		name: 'Billing',
+		path: '/adabiyotlar',
+		name: 'adabiyotlar',
 		layout: "dashboard",
 		component: () => import('../views/Billing.vue'),
+	},
+	{
+		path: '/darslar',
+		name: 'Darslar',
+		layout: "dashboard",
+		component: () => import('../views/RTL.vue'),
 	},
 	{
 		path: '/rtl',
@@ -80,7 +86,7 @@ function addLayoutToRoute( route, parentLayout = "default" )
 {
 	route.meta = route.meta || {} ;
 	route.meta.layout = route.layout || parentLayout ;
-	
+
 	if( route.children )
 	{
 		route.children = route.children.map( ( childRoute ) => addLayoutToRoute( childRoute, route.meta.layout ) ) ;

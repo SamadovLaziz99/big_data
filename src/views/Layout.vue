@@ -1,6 +1,6 @@
-<!-- 
-	This is an empty page for layout demonstrations, it uses the dashboard layout in: 
-	"./layouts/Dashboard.vue" .
+<!--
+	This is an empty page for layout demonstrations, it uses the dashboard layout in:
+	"./layouts/Kirish.vue" .
  -->
 
 <template>

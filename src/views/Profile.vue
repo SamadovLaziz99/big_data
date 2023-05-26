@@ -1,6 +1,6 @@
-<!-- 
-	This is the user profile page, it uses the dashboard layout in: 
-	"./layouts/Dashboard.vue" .
+<!--
+	This is the user profile page, it uses the dashboard layout in:
+	"./layouts/Kirish.vue" .
  -->
 
 <template>
@@ -54,10 +54,10 @@
 
 			</a-col>
 			<!-- / Profile Information Column -->
-			
+
 			<!-- Conversations Column -->
 			<a-col :span="24" :md="8" class="mb-24">
-			
+
 				<!-- Conversations Card -->
 				<CardConversations
 					:data="conversationsData"
@@ -68,12 +68,12 @@
 			<!-- / Conversations Column -->
 
 		</a-row>
-		
+
 		<!-- Projects Card -->
 		<a-card :bordered="false" class="header-solid h-full mb-24" :bodyStyle="{paddingTop: '14px'}">
 			<template #title>
-				<h6 class="font-semibold">Projects</h6>			
-				<p>Architects design houses</p>	
+				<h6 class="font-semibold">Projects</h6>
+				<p>Architects design houses</p>
 			</template>
 
 			<a-row type="flex" :gutter="[24,24]" align="stretch">
