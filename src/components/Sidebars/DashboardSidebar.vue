@@ -13,7 +13,9 @@
 		:class="['ant-layout-sider-' + sidebarColor, 'ant-layout-sider-' + sidebarTheme]"
 		theme="light"
 		:style="{ backgroundColor: 'transparent',}">
-<!--			<div class="brand"><img src="images/logo-ct-black.png" alt=""> <span>Muse Dashboard</span></div>-->
+			<div class="brand">
+        <img style="width: 150px; height: 100%" :src="logo" alt="Big data">
+      </div>
 			<hr>
 
 			<!-- Sidebar Navigation Menu -->
@@ -69,9 +71,8 @@
 	<!-- / Main Sidebar -->
 
 </template>
-
 <script>
-
+import logo from "@/assets/logo.png";
 	export default ({
 		props: {
 			// Sidebar collapsed status.
@@ -95,6 +96,7 @@
 		data() {
 			return {
 				// sidebarCollapsedModel: this.sidebarCollapsed,
+        logo: logo
 			}
 		},
 	})

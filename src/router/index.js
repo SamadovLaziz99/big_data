@@ -12,7 +12,7 @@ let routes = [
 	{
 		path: '/',
 		name: 'Home',
-		redirect: '/dashboard',
+		redirect: '/kirish',
 	},
 	{
 		path: '/kirish',
@@ -46,6 +46,19 @@ let routes = [
 		name: 'Darslar',
 		layout: "dashboard",
 		component: () => import('../views/RTL.vue'),
+		// children: [
+		// 	{
+		// 		path: ":index",
+		// 		component: () => import(/* webpackChunkName: "languages" */ "../views/item.vue"),
+		// 		name: "items"
+		// 	},
+		// ]
+	},
+	{
+		path: '/item',
+		name: 'items',
+		layout: "dashboard",
+		component: () => import('../views/item.vue'),
 	},
 	{
 		path: '/rtl',
